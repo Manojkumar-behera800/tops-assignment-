@@ -8,7 +8,7 @@ float x[5];
 printf("\n char array\n");
 for(i=0;i<5;i++){
 	printf("\n enter char[%d]",i);
-	scanf(" %c",&ch[i]);
+	scanf("%c",&ch[i]);
 }
 for(i=0;i<5;i++){
 	printf("\n ch[%d]=%c",i,ch[i]);
