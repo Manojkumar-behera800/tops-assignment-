@@ -9,4 +9,5 @@ main(){
 	ptr2 =&x;
 	
 	printf("\n value of ptr2=%f",*ptr2);
+	printf("\n value od ptr=%d",*ptr);
 }

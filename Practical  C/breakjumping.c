@@ -7,13 +7,13 @@ main(){
 		}
 		printf("\n i=%d",i);
 	}
-/*	for(;;){
+	for(;;){
 		printf("\n enter num");
 		scanf("%d",&num);
 		if(num==0){
 			break;
 		}
-	}*/
+	}
 }
 
 
