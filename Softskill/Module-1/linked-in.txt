@@ -1,7 +1,1 @@
-CREATE TABLE Countries(Country_id int AUTO_INCREMENT PRIMARY KEY, Country_name varchar(30), rid int, FOREIGN KEY (rid) REFERENCES regions(regionid));
-
-CREATE TABLE Location(Location_id int AUTO_INCREMENT PRIMARY KEY, streetaddress varchar(30),postalcode varchar(30), city varchar(30),stateprovince varchar(30), 1Rd int, FOREIGN KEY(1Rd) REFERENCES countries(Country_id));
-
-CREATE TABLE Departments(Department_id int AUTO_INCREMENT PRIMARY KEY,Department_Name varchar(30),Manager_id int,Dp int,FOREIGN KEY(Dp)REFERENCES Location(Location_id));
-
-CREATE TABLE Employee(Employee_id int AUTO_INCREMENT PRIMARY KEY,First_Name varchar(20),Last_Name varchar(20),Email varchar(30),Phone_number int,Hire_date int,Job_id varchar(30),salary int ,Commission_pct int ,manager_id int,EF int,FOREIGN KEY(EF) REFERENCES Departments(Department_id));
+https://www.linkedin.com/in/manoj-behera-344722408/
