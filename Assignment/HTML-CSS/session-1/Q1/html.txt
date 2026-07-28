@@ -1,0 +1,1 @@
+After inspecting an Instagram post image using Chrome DevTools, I found that the image is displayed using the img HTML tag, and the image container uses the CSS class _aagt.
