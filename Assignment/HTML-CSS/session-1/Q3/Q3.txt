@@ -1,0 +1,17 @@
+DOM Structure of myprofile.html
+
+The parent-child relationship is:
+
+html (Parent)
+
+body (Child of html)
+
+h1 (Child of body) → Manoj Behera
+
+p (Child of body) → Short Bio
+
+img (Child of body) → Profile Picture
+
+Diagram:
+
+This shows 3 levels: html → body → h1/p/img (content).

@@ -1,0 +1,17 @@
+#include<stdio.h>
+/*
+if(condition)
+  // block
+  square of only positive value .
+}
+*/
+
+main(){
+	int num;
+	printf("\n enter value of num =");
+	scanf("%d",&num);
+	if(num>0)
+	printf("\n square of %d=%d",num,num*num);
+	
+	
+}

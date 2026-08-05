@@ -1,0 +1,45 @@
+html
+│
+└── head
+│   ├── meta
+│   ├── title
+│   └── style
+│
+└── body
+    │
+    └── div (class="resume")
+        │
+        ├── header
+        │   ├── h1 (MANOJ BEHERA)
+        │   ├── h3 (Java Backend Developer)
+        │   └── div (class="contact")
+        │       ├── Email
+        │       ├── LinkedIn
+        │       ├── Phone
+        │       ├── Location
+        │       └── GitHub
+        │
+        ├── section (Professional Summary)
+        │   ├── h2
+        │   └── p
+        │
+        ├── section (Professional Experience)
+        │   ├── h2
+        │   ├── h4
+        │   └── ul
+        │       └── li
+        │
+        ├── section (Technical Skills)
+        │   ├── h2
+        │   └── ul
+        │       └── li
+        │
+        ├── section (Education)
+        │   ├── h2
+        │   └── ul
+        │       └── li
+        │
+        └── section (Languages & Interests)
+            ├── h2
+            ├── p (Languages)
+            └── p (Interests)
