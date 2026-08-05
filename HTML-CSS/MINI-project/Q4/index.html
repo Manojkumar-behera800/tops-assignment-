@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Social Link Preview</title>
+
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+<style>
+body{
+    font-family: Arial, sans-serif;
+    background:#f4f4f4;
+    padding:20px;
+}
+
+.container{
+    width:400px;
+    margin:auto;
+    background:#fff;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0 0 10px gray;
+}
+
+h2{
+    text-align:center;
+}
+
+input{
+    width:100%;
+    padding:10px;
+    margin:10px 0;
+    border:1px solid #ccc;
+    border-radius:5px;
+}
+
+button{
+    width:100%;
+    padding:10px;
+    background:#007bff;
+    color:white;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#0056b3;
+}
+
+#preview{
+    width:400px;
+    margin:20px auto;
+}
+
+.card{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px;
+    margin-bottom:15px;
+    border-radius:10px;
+    color:white;
+}
+
+.card i{
+    font-size:30px;
+}
+
+.info{
+    flex:1;
+    margin-left:15px;
+}
+
+.visit{
+    text-decoration:none;
+    background:white;
+    color:black;
+    padding:8px 12px;
+    border-radius:5px;
+    font-weight:bold;
+}
+
+/* Different styles for each platform */
+.instagram{
+    background:#E1306C;
+}
+
+.linkedin{
+    background:#0077B5;
+}
+
+.github{
+    background:#333333;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+<h2>Social Links</h2>
+
+<form id="socialForm">
+
+<input type="url" id="instagram" placeholder="Instagram URL">
+
+<input type="url" id="linkedin" placeholder="LinkedIn URL">
+
+<input type="url" id="github" placeholder="GitHub URL">
+
+<button type="submit">Submit</button>
+
+</form>
+</div>
+
+<div id="preview"></div>
+
+<script>
+document.getElementById("socialForm").addEventListener("submit", function(e){
+
+    e.preventDefault();
+
+    let preview = document.getElementById("preview");
+    preview.innerHTML = "";
+
+    createCard(
+        document.getElementById("instagram").value,
+        "Instagram",
+        "fa-instagram",
+        "instagram"
+    );
+
+    createCard(
+        document.getElementById("linkedin").value,
+        "LinkedIn",
+        "fa-linkedin",
+        "linkedin"
+    );
+
+    createCard(
+        document.getElementById("github").value,
+        "GitHub",
+        "fa-github",
+        "github"
+    );
+
+    function createCard(url, platform, icon, cssClass){
+
+        if(url=="") return;
+
+        let username = url.split("/").filter(Boolean).pop();
+
+        preview.innerHTML += `
+        <div class="card ${cssClass}">
+            <i class="fa-brands ${icon}"></i>
+
+            <div class="info">
+                <h3>${platform}</h3>
+                <p>@${username}</p>
+            </div>
+
+            <a href="${url}" target="_blank" class="visit">
+                Visit
+            </a>
+        </div>`;
+    }
+
+});
+</script>
+
+</body>
+</html>

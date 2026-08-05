@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Flipkart Product Tile</title>
+
+<style>
+body{
+    font-family: Arial, sans-serif;
+    background:#f1f3f6;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+}
+
+.product-card{
+    width:250px;
+    background:#fff;
+    border:1px solid #ddd;
+    border-radius:10px;
+    padding:15px;
+    text-align:center;
+    box-shadow:0 2px 8px rgba(0,0,0,0.2);
+}
+
+.product-card img{
+    width:180px;
+    height:180px;
+    display:block;
+    margin:0 auto 15px;
+}
+
+.product-name{
+    display:block;
+    font-size:18px;
+    font-weight:bold;
+    color:#212121;
+    margin-bottom:10px;
+}
+
+.price{
+    display:inline-block;
+    background:#388e3c;
+    color:white;
+    padding:6px 12px;
+    border-radius:5px;
+    font-size:18px;
+}
+
+/* Hide the price */
+.hide-price{
+    display:none;
+}
+</style>
+
+</head>
+<body>
+
+<div class="product-card">
+
+    <img src="https://via.placeholder.com/180" alt="Product Image">
+
+    <span class="product-name">
+        Wireless Bluetooth Headphones
+    </span>
+
+    <!-- Remove "hide-price" class to show the price -->
+    <span class="price hide-price">
+        ₹1,999
+    </span>
+
+</div>
+
+</body>
+</html>

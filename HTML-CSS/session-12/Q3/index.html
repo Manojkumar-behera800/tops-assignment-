@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flipkart Product Showcase</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            background-color: #f1f3f6;
+        }
+
+        .product-card {
+            transition: 0.3s;
+            border: none;
+        }
+
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+
+        .product-card img {
+            height: 180px;
+            object-fit: cover;
+        }
+
+        .price {
+            color: green;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .discount {
+            color: #388e3c;
+            font-size: 14px;
+        }
+
+        .section-title {
+            color: #2874f0;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container my-5">
+
+    <h2 class="text-center section-title mb-4">
+        Flipkart Product Showcase
+    </h2>
+
+    <div class="row g-4">
+
+        <!-- Product 1 -->
+        <div class="col-md-3 col-6">
+            <div class="card product-card h-100">
+                <img src="https://picsum.photos/250/200?1" class="card-img-top" alt="Product">
+                <div class="card-body text-center">
+                    <h6 class="card-title">Wireless Headphones</h6>
+                    <p class="price">₹1,999</p>
+                    <p class="discount">20% Off</p>
+                    <a href="#" class="btn btn-primary w-100">Buy Now</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 2 -->
+        <div class="col-md-3 col-6">
+            <div class="card product-card h-100">
+                <img src="https://picsum.photos/250/200?2" class="card-img-top" alt="Product">
+                <div class="card-body text-center">
+                    <h6 class="card-title">Smart Watch</h6>
+                    <p class="price">₹2,499</p>
+                    <p class="discount">30% Off</p>
+                    <a href="#" class="btn btn-primary w-100">Buy Now</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 3 -->
+        <div class="col-md-3 col-6">
+            <div class="card product-card h-100">
+                <img src="https://picsum.photos/250/200?3" class="card-img-top" alt="Product">
+                <div class="card-body text-center">
+                    <h6 class="card-title">Bluetooth Speaker</h6>
+                    <p class="price">₹1,499</p>
+                    <p class="discount">25% Off</p>
+                    <a href="#" class="btn btn-primary w-100">Buy Now</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 4 -->
+        <div class="col-md-3 col-6">
+            <div class="card product-card h-100">
+                <img src="https://picsum.photos/250/200?4" class="card-img-top" alt="Product">
+                <div class="card-body text-center">
+                    <h6 class="card-title">Running Shoes</h6>
+                    <p class="price">₹2,999</p>
+                    <p class="discount">35% Off</p>
+                    <a href="#" class="btn btn-primary w-100">Buy Now</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

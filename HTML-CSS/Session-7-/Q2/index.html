@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Spotify Playlist Bar</title>
+
+<style>
+body{
+    margin:0;
+    padding:20px;
+    background:#121212;
+    font-family:Arial, sans-serif;
+}
+
+h2{
+    color:white;
+    text-align:center;
+    margin-bottom:20px;
+}
+
+/* Playlist Container */
+.playlist{
+    display:flex;
+    justify-content:space-evenly;
+    gap:15px;
+    flex-wrap:wrap;
+}
+
+/* Song Card */
+.song-card{
+    width:180px;
+    height:80px;
+    background:#1DB954;
+    border-radius:10px;
+    padding:10px;
+    display:flex;
+    align-items:center;   /* Vertically centers the text */
+    justify-content:center;
+    text-align:center;
+    color:white;
+    box-shadow:0 2px 8px rgba(0,0,0,0.3);
+}
+
+.song-card h3{
+    margin:0;
+    font-size:16px;
+}
+
+.song-card p{
+    margin:5px 0 0;
+    font-size:13px;
+}
+</style>
+
+</head>
+<body>
+
+<h2>🎵 Spotify Playlist</h2>
+
+<div class="playlist">
+
+    <div class="song-card">
+        <div>
+            <h3>Perfect</h3>
+            <p>Ed Sheeran</p>
+        </div>
+    </div>
+
+    <div class="song-card">
+        <div>
+            <h3>Blinding Lights</h3>
+            <p>The Weeknd</p>
+        </div>
+    </div>
+
+    <div class="song-card">
+        <div>
+            <h3>Believer</h3>
+            <p>Imagine Dragons</p>
+        </div>
+    </div>
+
+    <div class="song-card">
+        <div>
+            <h3>Shape of You</h3>
+            <p>Ed Sheeran</p>
+        </div>
+    </div>
+
+    <div class="song-card">
+        <div>
+            <h3>Levitating</h3>
+            <p>Dua Lipa</p>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>

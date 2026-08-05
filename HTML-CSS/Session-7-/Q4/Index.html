@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Responsive Flipkart Product Grid</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#f1f3f6;
+    padding:20px;
+}
+
+h2{
+    text-align:center;
+    margin-bottom:20px;
+    color:#2874F0;
+}
+
+/* Product Grid */
+.product-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr); /* Desktop: 3 Columns */
+    gap:20px;
+}
+
+/* Product Card */
+.card{
+    background:#fff;
+    border:1px solid #ddd;
+    border-radius:10px;
+    text-align:center;
+    padding:15px;
+    box-shadow:0 2px 8px rgba(0,0,0,0.2);
+}
+
+.card img{
+    width:150px;
+    height:150px;
+}
+
+.card h3{
+    margin-top:10px;
+    font-size:18px;
+}
+
+/* Tablet View */
+@media (max-width:768px){
+    .product-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+}
+
+/* Mobile View */
+@media (max-width:480px){
+    .product-grid{
+        grid-template-columns:1fr;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<h2>Flipkart Product Grid</h2>
+
+<div class="product-grid">
+
+    <div class="card">
+        <img src="https://via.placeholder.com/150" alt="Product 1">
+        <h3>Wireless Headphones</h3>
+    </div>
+
+    <div class="card">
+        <img src="https://via.placeholder.com/150" alt="Product 2">
+        <h3>Smart Watch</h3>
+    </div>
+
+    <div class="card">
+        <img src="https://via.placeholder.com/150" alt="Product 3">
+        <h3>Bluetooth Speaker</h3>
+    </div>
+
+    <div class="card">
+        <img src="https://via.placeholder.com/150" alt="Product 4">
+        <h3>Gaming Mouse</h3>
+    </div>
+
+    <div class="card">
+        <img src="https://via.placeholder.com/150" alt="Product 5">
+        <h3>Keyboard</h3>
+    </div>
+
+    <div class="card">
+        <img src="https://via.placeholder.com/150" alt="Product 6">
+        <h3>Laptop Bag</h3>
+    </div>
+
+</div>
+
+</body>
+</html>

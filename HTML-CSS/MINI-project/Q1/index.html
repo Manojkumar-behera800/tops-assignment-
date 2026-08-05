@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Music Links Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f4f4;
+            padding: 20px;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        form {
+            width: 400px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px gray;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #218838;
+        }
+
+        #cards {
+            width: 400px;
+            margin: 20px auto;
+        }
+
+        .card {
+            background: white;
+            padding: 15px;
+            margin-bottom: 15px;
+            border-left: 5px solid #28a745;
+            border-radius: 8px;
+            box-shadow: 0 0 8px lightgray;
+        }
+
+        .card h3 {
+            margin-top: 0;
+        }
+
+        a {
+            color: blue;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+<h2>Music Links Form</h2>
+
+<form id="musicLinksForm">
+    <label>Spotify Profile URL</label>
+    <input type="url" id="spotify" placeholder="Enter Spotify URL" required>
+
+    <label>YouTube Music Profile URL</label>
+    <input type="url" id="youtube" placeholder="Enter YouTube Music URL" required>
+
+    <label>Apple Music Profile URL</label>
+    <input type="url" id="apple" placeholder="Enter Apple Music URL" required>
+
+    <button type="submit">Submit</button>
+</form>
+
+<div id="cards"></div>
+
+<script>
+document.getElementById("musicLinksForm").addEventListener("submit", function(event) {
+    event.preventDefault();
+
+    let spotify = document.getElementById("spotify").value;
+    let youtube = document.getElementById("youtube").value;
+    let apple = document.getElementById("apple").value;
+
+    document.getElementById("cards").innerHTML = `
+        <div class="card">
+            <h3>Spotify</h3>
+            <a href="${spotify}" target="_blank">${spotify}</a>
+        </div>
+
+        <div class="card">
+            <h3>YouTube Music</h3>
+            <a href="${youtube}" target="_blank">${youtube}</a>
+        </div>
+
+        <div class="card">
+            <h3>Apple Music</h3>
+            <a href="${apple}" target="_blank">${apple}</a>
+        </div>
+    `;
+});
+</script>
+
+</body>
+</html>
